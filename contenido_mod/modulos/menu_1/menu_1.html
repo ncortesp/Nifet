@@ -1,0 +1,49 @@
+<script src="menu_1js.js" type="text/javascript"></script>
+
+
+
+
+Seleccionar cantidad de  celdas de menu
+<select  id="selectormenu" name="selectormenu" onchange="mostrarmenu()">
+  <option value="0" selected="selected" disabled="disabled">Seleccionar</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+</select>
+
+
+
+<div id="campodetexto" style="background-color:#666;">
+
+</div>
+<div>Panel de  control  de menu
+Color Menu <input type="color" name="colordiv" onChange="color(this.value,'menu_1')">
+Color Primer link  <input type="color"name="colorprimer" onChange="colorprimer(this.value,'a_1')">
+Color texto  <input type="color"name="colortexto" onChange="colortexto(this.value,'a_')">
+Margen superior <input type="range"name="margensuperior" min="0" max="50" step="1" value="0" onChange="margen_sup_menu(this.value,'menu_1')">
+Margen inferior <input type="range"name="margeninferior" min="0" max="50" step="1" value="0" onChange="margen_inf_menu(this.value,'menu_1')">
+Color borde <input type="color"name="colorborde" onChange="colorborde(this.value,'a_')">
+
+
+
+  </div>
+<div id="contenidomenu_1"  style="  width:100%;">
+<div id="menu_1" style="background-color:#066; overflow:hidden;"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

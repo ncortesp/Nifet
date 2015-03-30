@@ -1,0 +1,17 @@
+<head><link type="text/css" rel="stylesheet" href="css/style.css">
+<style type="text/css"></style></head><body><div id="general">
+	<div class="wrapper" id="wrapper">
+		<div class="header" id="header">
+	  	<p>header</p>
+		</div>
+         	<div id="menu"></div>       
+   		<div id="box">
+			<div id="central"></div>
+			<div id="box_left">contenedor left</div>
+            <div id="box_right">contenedor derecho</div> 
+            
+  		</div>
+		<div class="footer" id'footer'="">footer</div>
+	</div>
+</div>
+</body>

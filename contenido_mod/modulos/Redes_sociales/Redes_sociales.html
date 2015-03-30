@@ -1,0 +1,21 @@
+<select name="select" id="seleccion_color" di onChange="">
+<option selected="selected" value="1">Blanco</option>
+<option value="2">Negro </option>
+</select>
+<label>Fondo Transparente</label>
+<input  id="transparente"type="checkbox" onClick="transparente('transparente')">
+<input type="color" name="fondo_redes" onchange="fondo_redes(this.value);" id="fondo_redes" />
+<input type="checkbox" value="Facebook" onchange="agregar_elemento(this.value)" id="Facebook"> Facebook
+<input type="checkbox" value="Twitter"onchange="agregar_elemento(this.value)" id="Twitter" >Twitter
+<input type="checkbox" value="Instagram"onchange="agregar_elemento(this.value)" id="Instagram" >Instagram
+<input type="checkbox" value="YouTube"onchange="agregar_elemento(this.value)" id="YouTube" >YouTube
+<div id="panel_redes"></div>
+
+
+
+<div id="contenidoRedes_sociales" style="overflow:hidden;">
+
+<div id="Redes_sociales" style=" background-color:#999 ;float:left;"></div>
+
+</div>
+

@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/* CSS Document */
+.tablaplantilla{
+	width:100%;
+	}
+td, th, .tablaplantilla{
+	border-width:2px;
+	border-color:#000000;
+	border-style:solid;
+	}
+@media screen and (max-width:550px){
+	table, thead, tr, th, tbody, td{
+		display:block;
+	}
+
+	thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+		border-style:solid;
+	}
+
+	td {
+		border: none;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-left: 50%;
+		border-style:solid;
+
+	}
+	td:before {
+		position: absolute;
+
+		top: 6px;
+		left: 6px;
+		width: 45%;
+		padding-right: 10px;
+		white-space: nowrap;
+		border-style:solid;
+	}
+
+	}

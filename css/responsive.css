@@ -1,0 +1,49 @@
+html {
+   -webkit-text-size-adjust: none;
+}
+.video embed,
+.video object,
+.video iframe {
+   width: 100%;
+   height: auto;
+}
+
+.img_slider {
+	max-width:100%;
+	height: auto;
+   	width: auto\9;  ie8
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	header, footer, .featured, .social {width:100%;}
+
+}
+
+@media only screen and (max-width: 768px) {
+
+	/*header {margin-top: 0px;height:170px;}*/
+
+	#content{background-color:#ffffff;}
+	/*header nav{height:30px; width:50%; top:20px;}
+	header nav ul li {position: relative; float:left;padding: 3px 0px 0px 2px}
+	header {height:120px}*/
+   .rslides{height:100% }
+   .tabla_registro{width:100%;}
+
+
+
+}
+@media only screen and (max-width:450px){
+
+	  header nav{width:100%; height:50%; }
+	  header{height:260px;}
+	  .nav2 {width:100%;height:50%;margin-top:0px; float:left; }
+	  .logo_cpanel{width:100%; height:50%;}
+	 .logo_cpanel img{ width:50%;height:100%; margin:0 auto;}
+	  .nav2 ul{margin-top:0px ; }
+	  .nav ul li{margin:auto;}
+	}
+@media only screen and (max-width:877px){
+		.barra{padding-right:0px;}
+	}

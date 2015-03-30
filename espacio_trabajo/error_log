@@ -1,0 +1,1 @@
+[14-Jan-2014 23:44:53 America/New_York] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/pcvalpoc/public_html/nifet/espacio_trabajo/index_trabajo.php:2) in /home/pcvalpoc/public_html/nifet/espacio_trabajo/index_trabajo.php on line 5

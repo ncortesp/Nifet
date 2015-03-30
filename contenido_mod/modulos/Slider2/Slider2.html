@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+
+
+    <style>
+#slideshow {
+
+    position: relative;
+    width: 100%;
+    height: 240px;
+
+}
+
+#slideshow > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+
+}
+</style>
+</head>
+<div id="edicionSlider2">
+	 <input name="file-input" id="slfile-input" type="file" onClick="cargaimagenes()"/>
+     <button onclick="sube(document.getElementById('slfile-input').value,document.getElementById('slimgSalida').src)">subir</button>
+     <button onClick="lee(),leevp()">Leer imagenes</button>
+     <div id="sliderprevio"></div>
+     <div hidden="hidden" >
+     <img id="slimgSalida" width="50%" height="50%" src=" " />
+     </div>
+</div>
+
+<div id="contenidoSlider2" hidden="hidden">
+	<div id="Slider2"  >
+
+    </div>
+</div>
+</html>

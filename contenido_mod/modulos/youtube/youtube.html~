@@ -1,0 +1,55 @@
+<head>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" >
+	function refreshyt(datos) {	
+				videokey = datos.split('=');
+				videokey = videokey[1];
+					
+				var ytframe = $("<iframe>",{
+					"id":"ytframe",
+					"width":"400",
+					"height":"300",
+					"src":"//www.youtube.com/embed/"+videokey,
+					"frameborder":"0",
+					"allowfullscreen":"allowfullscreen"
+				});
+					
+				 $("#yframe").html(ytframe);
+				
+				$("#controlesyt").html("<label>Ingresa el ancho: </label><input onchange='ytancho(this.value)'></input><br>");
+				$("#controlesyt").append("<label>Ingresa el alto:  </label><input onchange='ytalto(this.value)'></input><br>");
+				$("#controlesyt").append("<label>Ingresa un Titulo: </label><input onchange='yttitulo(this.value)'></input><br>");
+				
+				
+	}
+	
+	function ytancho(valor) {
+		$('#ytframe').css({'width':valor});
+	}
+		function ytalto(valor) {
+		$('#ytframe').css({'height':valor});
+	}
+	function yttitulo(valor) {
+		$('#ytitulo').html("<p>"+valor+"</p>");
+	}
+	
+	function ytayuda() {
+		alert("ingresa la URL del video que quieras insertar. puedes copiarla de la barra del navagador ej: http://www.youtube.com/watch?v=dQw4w9WgXcQ")
+	}
+</script>
+</head>
+<fieldset>
+<legend>Youtube Widget</legend>
+<p>URL de video Youtube [<a href="#" onclick="ytayuda()">?</a>]</p>
+<input name="textyt" onchange="refreshyt(this.value)"/>
+<div id="controlesyt"></div>
+</fieldset>
+<fieldset>
+<legend>Vista Previa</legend>
+<div id="contenidoyoutube">
+	<div id="youtube">
+	<div id="ytitulo"></div>
+	<div id="yframe"></div>		
+	</div>
+</div>
+</fieldset>

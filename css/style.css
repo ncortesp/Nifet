@@ -1,0 +1,330 @@
+/*
+Free Html5 Responsive Templates
+Author: Kimmy
+Author URI: http://www.zerotheme.com/
+*/
+/* ---------------------Reset----------------------- */
+a,abbr,acronym,address,applet,article,aside,audio,b,blockquote,big,body,center,canvas,caption,cite,code,command,datalist,dd,del,details,dfn,dl,div,dt,em,embed,fieldset,figcaption,figure,font,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,keygen,label,legend,li,meter,nav,object,ol,output,p,pre,progress,q,s,samp,section,small,span,source,strike,strong,sub,sup,table,tbody,tfoot,thead,th,tr,tdvideo,tt,u,ul,var{background:transparent;border:0 none;font-size:100%;margin:0;padding:0;border:0;outline:0;vertical-align:top;}ol, ul {list-style:none;}blockquote, q {quotes:none;}table, table td {padding:0;border:none;border-collapse:collapse;}img {vertical-align:top;}embed {vertical-align:top;}
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {display:block;}
+mark, rp, rt, ruby, summary, time {display:inline;}
+
+iframe {border:0; margin:0; padding:0;}
+input, textarea, select {margin:0; padding:0px;}
+
+/* -------------------------------------------- */
+/* ------------------Style---------------------- */
+/* -------------------------------------------- */
+/*html, body {width:100%; padding:0; margin:0;}*/
+body {background-color:#F0F7F0;font: 12px/25px Arial, Helvetica, sans-serif;}
+
+/*-------------------------*/
+a{color: #333333;text-decoration: none;}
+a:hover {text-decoration: none;}
+
+a.button, input.button {	cursor: pointer;	color: #ffffff;	line-height: 14px;	font-family: Arial, Helvetica, sans-serif;	font-size: 14px;	font-weight: bold;	background: #598084;	border:1px solid #ffffff; -webkit-border-radius: 4px;-moz-border-radius: 4px;-khtml-border-radius: 4px;border-radius: 4px;;}
+a.button {	display: inline-block;	text-decoration: none;	padding: 6px 12px 6px 12px;}
+input.button {	margin: 0;	border: 0;	height: 24px;	padding: 0px 12px 0px 12px;}
+a.button:hover, input.button:hover {}
+
+/*-------------header */
+header {width:100%;height: 130px; position:relative; margin: 0 auto;background-color:#242424;}
+ .logo{width:50%; height:100%;position:relative; float:left; }
+ .logo img {width:210px ; height:110px ; margin:10px 0px 10px 10px}
+
+/*------------menu */
+header nav {margin-top:20px;  width:48%;float:right; width:50%;}
+
+header nav ul li {position: relative; float:left;}
+header nav ul li:hover {}
+header nav ul li a {font-size: 14px; line-height:14px;color: #CCC;display: block;padding: 6px 0px 6px 10px;margin-bottom: 5px;z-index: 6;position: relative;font-weight:bold;}
+header nav ul li:hover a{color:#ffffff;background-color:#009fe3; }
+
+
+.nav_cerrar   {font-size: 14px; line-height:14px;color: #CCC !important;display: block;padding: 6px 0px 6px 0px;margin-bottom: 5px;z-index: 6 ;font-weight:bold; float:right;}
+
+.featured{width:100%; margin:0 auto;border-left:1px solid #000000;border-bottom:1px solid #000000;border-right:1px solid #000000;}
+
+
+
+----------- --content */
+/*nav panel de  control*/
+.nav2 {height: 100% ;width:50%; float:left;}
+.nav2 ul {list-style: none;margin-top:50px; float:right;padding-right:2%; }
+.nav2 ul li {position: relative; float:left;padding: 6px 3px 0px 3px; color:#FFF; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif; font-size:14px;}
+
+
+
+.logo_cpanel{width:50%; float:left;}
+.logo_cpanel img{ width:200px;height:100px;padding:2%;}
+.header_cpanel{height:120px;}
+
+/*---------------------------------------*/
+#content {}
+
+.zerogrid{}
+
+.block{background:#ffffff;width:100%}
+
+
+.block01 section {text-align:center;}
+.block01 section .heading h2{color:#4F4F4F ;font-size:22px; line-height:25px; letter-spacing:-1px; font-weight:normal; margin:10px 0;}
+.block01 section .content{color:#555555; font-weight:bold;}
+.block01 section .more{ text-align:center;}
+.block01 section .more a{ text-decoration:none; text-transform:none;}
+
+.block02 {background:#EDEDED; margin-bottom:20px;border-top:1px solid #E1E1E1;border-bottom:1px solid #E1E1E1;}
+.block02 section{text-align:center; padding: 20px 50px; font-size:20px;}
+
+.block03 {padding-bottom: 20px;}
+.block03 section{}
+.block03 section img{border-bottom:2px solid #262A2D; border-top:2px solid #262A2D;}
+.block03 section .heading{font-size:14px; font-style:italic;}
+.block03 section a{ text-decoration:underline; padding-left:10px;}
+
+.block04 {background:#EDEDED; margin-bottom:20px;border-top:1px solid #E1E1E1;border-bottom:1px solid #E1E1E1;}
+.block04 section{text-align:left; padding: 5px 10px; font-size:20px;}
+
+.block05 {}
+
+.block06 {}
+.block06 img{width:200px; padding:5px; border:1px solid #ccc;}
+.block06 div{text-align:center;}
+
+#main-content{}
+#main-content article{ clear:both; font-size:14px; margin-bottom:20px;}
+#main-content article .heading{margin-bottom: 10px; padding:10px 0px;border-bottom:1px solid #E1E1E1; border-top:1px solid #E1E1E1;}
+#main-content article h2{font-size:22px;}
+#main-content article .info{color:#A3A3A3; font-style:italic;}
+#main-content article img{width: 620px;}
+#main-content article p{margin:10px 0px;}
+#main-content article .more{}
+
+#main-content .comment{font-weight:bold; margin:50px 0px;}
+#main-content .comment div{margin-bottom: 20px; vertical-align:middle; }
+#main-content .comment input{border: 2px solid #999999;padding: 8px 10px;width:250px;}
+#main-content .comment textarea{border: 2px solid #999999;padding: 8px 10px;width:100%;}
+#main-content .comment input[type="submit"] {cursor: pointer; width:100px; float:right;
+	background: -webkit-linear-gradient(top, #efefef, #ddd);background: -moz-linear-gradient(top, #efefef, #ddd);
+	background: -ms-linear-gradient(top, #efefef, #ddd);background: -o-linear-gradient(top, #efefef, #ddd);
+	background: linear-gradient(top, #efefef, #ddd);
+	color: #333;text-shadow: 0px 1px 1px rgba(255,255,255,1);	border: 2px solid #999999;}
+#main-content .comment input[type="submit"]:hover {
+	background: -webkit-linear-gradient(top, #eee, #ccc);	background: -moz-linear-gradient(top, #eee, #ccc);
+	background: -ms-linear-gradient(top, #eee, #ccc);	background: -o-linear-gradient(top, #eee, #ccc);
+	background: linear-gradient(top, #eee, #ccc);	border: 2px solid #bbb;}
+#main-content .comment input[type="submit"]:active {
+	background: -webkit-linear-gradient(top, #ddd, #aaa);	background: -moz-linear-gradient(top, #ddd, #aaa);
+	background: -ms-linear-gradient(top, #ddd, #aaa);	background: -o-linear-gradient(top, #ddd, #aaa);
+	background: linear-gradient(top, #ddd, #aaa);	border: 2px solid #999;}
+
+
+#sidebar{}
+#sidebar section{background: #EFEFEF; border:1px solid #E1E1E1; margin-bottom:20px;}
+#sidebar section .heading{ padding:15px 10px 5px 10px;}
+#sidebar section h2{font-size:22px; font-weight:normal;}
+#sidebar .content{padding:15px;border-top:3px solid #474747;}
+#sidebar .content img{float:left;}
+#sidebar .content ul{ list-style:none; font-size:14px;}
+#sidebar .content ul li{border-bottom: 1px solid #E1E1E1; padding:5px; font-weight:bold;}
+#sidebar .content .post {margin-bottom: 20px;}
+#sidebar .content .post h4{ font-size:14px;}
+#sidebar .content .post img{ margin-right:10px;}
+#sidebar .content .post p{color:#A3A3A3; font-style:italic;}
+
+/*------------footer */
+footer {width:100%; color:#777777;background-color:#242424;
+	}
+footer .wrapfooter{
+	padding:10px;
+
+	;
+}
+
+/* estilo formulario de login */
+
+
+
+h1 {
+	font: 4em normal Arial, Helvetica, sans-serif;
+	padding: 20px;	margin: 0;
+	text-align:center;
+}
+
+h1 small{
+	font: 0.2em normal  Arial, Helvetica, sans-serif;
+	text-transform:uppercase; letter-spacing: 0.2em; line-height: 5em;
+	display: block;
+}
+
+
+
+.container {width: 960px; margin: 0 auto; overflow: hidden;}
+
+#content_form {	float: left; width: 100%;}
+
+.post { margin: 0 auto; padding-bottom: 50px; float: left; width: 960px; }
+
+.btn-sign {
+	width:460px;
+	margin-bottom:20px;
+	margin:0 auto;
+	padding:20px;
+	border-radius:5px;
+	background: -moz-linear-gradient(center top, #00c6ff, #018eb6);
+    background: -webkit-gradient(linear, left top, left bottom, from(#00c6ff), to(#018eb6));
+	background:  -o-linear-gradient(top, #00c6ff, #018eb6);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#00c6ff', EndColorStr='#018eb6');
+	text-align:center;
+	font-size:36px;
+	color:#fff;
+	text-transform:uppercase;
+}
+
+.btn-sign a { color:#fff; text-shadow:0 1px 2px #161616; }
+
+#mask {
+	display: none;
+	background: #000;
+	position: fixed; left: 0; top: 0;
+	z-index: 10;
+	width: 100%; height: 100%;
+	opacity: 0.8;
+	z-index: 999;
+}
+
+.login-popup{
+	display:none;
+	background: #242424;
+	padding: 10px;
+
+	float: left;
+	font-size: 1.2em;
+	position: fixed;
+	top: 50%; left: 50%;
+	z-index: 99999;
+	box-shadow: 0px 0px 20px #999;
+	-moz-box-shadow: 0px 0px 20px #999; /* Firefox */
+    -webkit-box-shadow: 0px 0px 20px #999; /* Safari, Chrome */
+	border-radius:3px 3px 3px 3px;
+    -moz-border-radius: 3px; /* Firefox */
+    -webkit-border-radius: 3px; /* Safari, Chrome */
+}
+
+img.btn_close {
+	float: right;
+	margin: -28px -28px 0 0;
+}
+
+fieldset {
+	border:none;
+}
+
+form.signin .textbox label {
+	display:block;
+	padding-bottom:7px;
+}
+
+form.signin .textbox span {
+	display:block;
+}
+
+form.signin p, form.signin span {
+	color:#fff;
+	font-size:11px;
+	line-height:18px;
+}
+
+form.signin .textbox input {
+	background:#666666;
+	border-bottom:1px solid #333;
+	border-left:1px solid #000;
+	border-right:1px solid #333;
+	border-top:1px solid #000;
+	color:#fff;
+	border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+	font:13px Arial, Helvetica, sans-serif;
+	padding:6px 6px 4px;
+	width:200px;
+}
+
+form.signin input:-moz-placeholder { color:#bbb; text-shadow:0 0 2px #000; }
+form.signin input::-webkit-input-placeholder { color:#bbb; text-shadow:0 0 2px #000;  }
+
+.button {
+	background: -moz-linear-gradient(center top, #f3f3f3, #dddddd);
+	background: -webkit-gradient(linear, left top, left bottom, from(#f3f3f3), to(#dddddd));
+	background:  -o-linear-gradient(top, #f3f3f3, #dddddd);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f3f3f3', EndColorStr='#dddddd');
+	border-color:#000;
+	border-width:1px;
+	border-radius:4px 4px 4px 4px;
+	-moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+	color:#333;
+	cursor:pointer;
+	display:inline-block;
+	padding:3px 3px 2px;
+	margin-top:3px;
+	font:12px;
+	width:105px;
+}
+
+.button:hover { background:#ddd;}
+
+ /* navbar menu cpanel*/
+
+#cssmenu ul {
+  list-style-type: none;
+  width: auto;
+  position: relative;
+  display: block;
+  height: 33px;
+  font-size: 12px;
+  background: url(../images/bgnavcpanel.png) repeat-x top left;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  border: 1px solid #000;
+  margin: 0;
+  padding: 0;
+}
+#cssmenu li {
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+#cssmenu li a {
+  float: left;
+  color: #ffffff;
+  text-decoration: none;
+  height: 24px;
+  padding: 9px 15px 0;
+  font-weight: normal;
+}
+#cssmenu li a:hover,
+#cssmenu .active {
+  color: #fff;
+  background: url(bg.png) repeat-x top left;
+  text-decoration: none;
+}
+#cssmenu .active a {
+  color: #fff;
+  font-weight: 700;
+}
+#cssmenu ul {
+  background-color: #DC4900;
+}
+#cssmenu li a:hover,
+#cssmenu li.active {
+  background-color: #F46D00;
+}
+
+/* css tabla registro */
+.tabla_registro{
+	width:600px;
+	}
+.textbox{
+
+
+	}

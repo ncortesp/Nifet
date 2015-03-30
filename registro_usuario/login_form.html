@@ -1,0 +1,36 @@
+<!--<script>
+function formulario(f) { 
+if (f.usuario.value   == '') { alert ('El campo "Usuario" esta vacío');  
+f.usuario.focus(); return false; } 
+if (f.password.value  == '') { alert ('El campo "Password" esta vacío'); 
+f.password.focus(); return false; }
+
+
+ return true; } 
+
+</script>-->
+<!--script formulario login -->
+
+ <!--   -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Cerrar Ventana" alt="Close" /></a>
+          <form method="post" class="signin" action="registro_usuario/validarusuario.php"  onsubmit="return formulario(this)">
+                <fieldset class="textbox">
+            	<label class="username">
+                <span>Nombre de Usuario</span>
+                <input id="usuario" name="usuario" value="" type="text"  placeholder="Usuario" required>
+                </label>
+                
+                <label class="password">
+                <span>Password</span>
+                <input id="password" name="password" value="" type="password" placeholder="Password" required>
+                </label>
+                
+                <button class="submit button" type="submit">Ingresar</button>
+                <a href="registro_usuario/registro.php"><button class=" button" type="button">Registrar</button></a>
+                
+                
+                
+                </fieldset>
+          </form>

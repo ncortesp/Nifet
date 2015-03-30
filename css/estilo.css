@@ -1,0 +1,204 @@
+@charset "utf-8";
+header{
+    background: #242424;
+    height:120px;
+    position: relative;
+    width: 100%;
+}
+
+/* El logo sera flotado a la izquierda */
+#logo{
+    background: url(../img/nifet.png) no-repeat 0 0;
+    display: block;
+    float: left;
+    margin: 18px 10px 0px 20px;
+    width: 164px;
+    height: 92px;
+    text-indent: -9999px;
+	background-size:contain;
+}
+
+/* Nuestro nav con id #menu lo flotaremos a la derecha*/
+#menu{ float: right; z-index:10;}
+
+    /* Quitamos estilos por defecto de el tag UL */
+    #menu ul{
+        /*margin: 0;*/
+		margin-top:30px;
+        padding: 0;
+        list-style: none;
+        font-size: 14px;
+		font-family: Verdana, Helvetica, Arial, sans-serif;
+    }
+
+        /* Centramos y ponemos los textos en mayuscula */
+        #menu li{
+            display: block;
+            float: left;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+            /* Damos estilo a nuestros enlaces */
+            #menu li a{
+                display: block;
+                color: #fff;
+                text-decoration: none;
+                height: 60px;
+                line-height: 60px;
+                padding: 0 26px;
+            }
+                #menu li a:hover{
+                    background: #009fe3;
+                    color: #fff;
+                }
+
+/* Estilos #nav-mobile y lo ocultamos */
+#nav-mobile{
+    display: none;
+    background: url(../img/nav.png) no-repeat center center;
+    float: right;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    top:0;
+    opacity: .6;
+
+}
+
+    /* Agregaremos esta clase a #nav-mobile, cuando el menu mobile haya sido desplegado */
+    #nav-mobile.nav-active{
+        opacity: 1;
+
+    }
+	@media only screen and (max-width: 768px) {
+
+    /* mostramos #nav-mobile */
+    #nav-mobile{ display: block; }
+
+    /* Fijamos nuestro nav en 100% ancho y dejamos de flotarlo */
+    #menu{
+        width: 100%;
+        float: none;
+        padding-top: 120px;
+
+    }
+
+        /* Convertimos nuestra lista de enlaces en un menú horizontal */
+        #menu ul{
+			margin:0;
+            box-shadow: 0 1px 2px rgba(0,0,0,.5);
+            max-height: 0;
+            overflow: hidden;
+        }
+            /* estilos para los LI del menu */
+            #menu li{
+                background: #33363b;
+                border-bottom: 1px solid #282b30;
+                float: none;
+            }
+                /* Quitamos el borde del ultimo item del menú */
+                #menu li:last-child{ border-bottom: 0;}
+
+                #menu li a{
+                    padding: 15px 0;
+                    height: auto;
+                    line-height: normal;
+                }
+                #menu li a:hover{background:#2a2d33}
+
+        /* Agregamos una animación al despligue del menú */
+        #menu ul.open-menu{
+            max-height: 400px;
+            transition: max-height .4s;
+        }
+}
+/* content*/
+#content{
+	height:130px;
+	font-family: Verdana, Helvetica, Arial, sans-serif;}
+
+/* footer */
+ footer {font-family: Verdana, Helvetica, Arial, sans-serif;width:100%; color:#777777;background-color:#242424;
+	}
+footer .wrapfooter{
+	padding:10px;
+
+	;
+}
+/* popup */
+
+
+#botonform{
+        width: 80px;
+        height: 30px;
+        background: #009fe3;
+        border-radius:5px;
+        color: #fff;
+        border:1px solid #fff;
+    }
+
+    .overlay{
+        background-color: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        visibility: hidden;
+        z-index: 1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+    }
+    .popup{
+        display: none;
+         background-color: #fff;
+    border: 3px solid #fff;
+    left: 50%;
+    padding: 15px;
+    position: fixed;
+    text-align: justify;
+    top: 40%;
+    z-index: 10;
+
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+
+    -webkit-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+    -moz-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+    -ms-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+    -o-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+    box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+
+    -webkit-transition: opacity .5s, top .5s;
+    -moz-transition: opacity .5s, top .5s;
+    -ms-transition: opacity .5s, top .5s;
+    -o-transition: opacity .5s, top .5s;
+    transition: opacity .5s, top .5s;
+    }
+
+    .overlay:target{
+        visibility: visible;
+        opacity: 1;
+    }
+    .overlay:target+.popup{
+display: block;
+    }
+    .close{
+        background: #dadada;
+        height: 30px;
+
+    }
+    .close:before{
+        content: "X";
+        font-size: 24px;
+    }
